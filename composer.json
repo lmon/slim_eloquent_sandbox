@@ -1,0 +1,12 @@
+{
+    "require": {
+        "slim/slim": "*",
+        "illuminate/database": "*",
+        "dhorrigan/capsule": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "app/models"
+        ]
+    }
+}
