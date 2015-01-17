@@ -9,9 +9,9 @@ $capsule = new Capsule;
 $capsule->addConnection([
     'driver' => 'mysql',
     'host' => 'localhost',
-    'database' => 'iflistco_iflistdata_dev',
-    'username' => 'generic',
-    'password' => 'genericpass',
+    'database' => 'XXXXXXX',
+    'username' => 'xxxxxxxx',
+    'password' => 'XXXXX',
     'charset' => 'utf8',
     'collation' => 'utf8_general_ci',
     'prefix' => '',
