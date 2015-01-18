@@ -4,18 +4,10 @@
 // Eloquent instantiation
 use Illuminate\Database\Capsule\Manager as Capsule;
 
+include "../vendor/config/app_config.php";//$db_vars
 $capsule = new Capsule;
 
-$capsule->addConnection([
-    'driver' => 'mysql',
-    'host' => 'localhost',
-    'database' => 'XXXXXXX',
-    'username' => 'xxxxxxxx',
-    'password' => 'XXXXX',
-    'charset' => 'utf8',
-    'collation' => 'utf8_general_ci',
-    'prefix' => '',
-]);
+$capsule->addConnection( $db_vars );
 
 // Set the event dispatcher used by Eloquent models... (optional)
 use Illuminate\Events\Dispatcher;
